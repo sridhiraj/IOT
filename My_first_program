@@ -1,0 +1,13 @@
+import RPi.GPIO as GPIO
+import time
+
+LED_1_PIN = 17
+
+GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(LED_1_PIN, GPIO.OUT)
+
+while True:
+	GPIO.output(LED_1_PIN, GPIO.HIGH)
+
+GPIO.cleanup()
